@@ -1,0 +1,141 @@
+import { StyleSheet } from "react-native";
+import { colors } from "../../Components/Common/Colors";
+
+
+export const style =(width, height,isProtrait)=> StyleSheet.create({
+    container:{
+        height:height,
+        backgroundColor:colors.white,
+        overflow:'hidden',
+        alignItems:'center',
+        overflow:'hidden',
+    },
+    profile:{
+        flexDirection:'row',
+        justifyContent:'space-around',
+        alignItems:"center",
+        borderBottomWidth:1,
+        borderBottomColor:colors.primary_green,
+        padding:10,
+        width:'100%',
+        overflow:'hidden'
+    },
+    profileImage:{
+        justifyContent:'center',
+        alignItems:'center',
+        width:isProtrait?width*.2:height*.2,
+        height:isProtrait?width*.2:height*.2,
+        borderRadius:50,
+        marginVertical:10,
+        borderWidth:5,
+        borderColor:colors.black_level_3
+    },
+    image:{
+        width:"100%",
+        height:"100%",
+        resizeMode:"cover",
+        borderRadius:50
+    },
+    profileText:{
+        width:150,
+        paddingLeft:10,
+        marginVertical:5,
+    },
+    profileName:{
+        fontSize: 20,
+        fontFamily: 'Lato-Bold',
+        color:colors.black_level_1
+    },
+    profileMail:{
+        fontSize: 16,
+        fontFamily: 'Lato-Regular',
+        color: colors.primary
+    },
+    drawerContent:{
+        flexDirection:'column',
+        justifyContent:'space-evenly',
+        alignItems:"center",
+        marginVertical:5,
+    },
+    drawerContentItem:{
+        width:'75%',
+        flexDirection:'row',
+        justifyContent:'space-between',
+        alignItems:'center',
+        marginVertical:6
+    },
+    drawerContentItemIcon:{
+        width:'100%',
+        flexDirection:"row",
+        justifyContent:'flex-start',
+        alignItems:'center'
+    },
+    drawerIcon:{
+        width:isProtrait?width*.07:height*.07,
+        height:isProtrait?width*.07:height*.07,
+        resizeMode:'contain',
+    },
+    drawerText:{
+        fontFamily:'Lato-Bold',
+        fontSize:18,
+        color:colors.black_level_2,
+        marginLeft:10,
+    },
+    logoutView:{
+        marginVertical:height*.01,
+        justifyContent:'center',
+        alignItems:'center',
+        marginHorizontal:10
+    },
+    logoutBtn:{
+        width:isProtrait?width*.4:height*.4,
+        backgroundColor:colors.secondary_green,
+        padding:10,
+        borderRadius:10,
+        flexDirection:'row',
+        justifyContent:'center',
+        alignItems:"center",
+    },
+    logoutBtnText:{
+        color:colors.black_level_1,
+        fontFamily:'Lato-Bold',
+        padding:5,
+        fontSize:18
+    },
+    SupportView:{
+        borderRadius:width*.02,
+        marginBottom:height*.1,
+        marginHorizontal:10,
+        backgroundColor:colors.light_green,
+        padding:10,
+    },
+    supportHead:{
+        fontFamily:'Lato-Blod',
+        fontSize:20,
+        color:colors.black_level_2
+    },
+    supportText:{
+        fontFamily:'Lato-Regular',
+        fontSize:16,
+        letterSpacing:.91,
+        lineHeight:20,
+        color:colors.black_level_3
+    },
+    supportBtn:{
+        width:width*.3,
+        padding:5,
+        borderRadius:10,
+        backgroundColor:colors.primary_green,
+        justifyContent:'center',
+        alignItems:'center',
+        marginVertical:5
+    },
+    supportBtnText:{
+        color:colors.white_level_2,
+        fontFamily:'Lato-Bold',
+        fontSize:18,
+        padding:4
+    }
+
+
+})

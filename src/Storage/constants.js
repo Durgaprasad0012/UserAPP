@@ -1,0 +1,6 @@
+export const LOGIN = 'LOGIN'
+export const SIGNOUT = 'SIGNOUT'
+export const UPDATEPROFILE = 'UPDATEPROFILE'
+export const CATEGORIES = 'CATEGORIES'
+export const CARTCOUNT = 'CARTCOUNT'
+export const CATID = 'CATID'
